@@ -47,6 +47,9 @@ To maintain portability across different platforms, no inline assembly is used.
 The downside is that the `&&` operator is used from the GNU compiler extensions to get the address that a label references.
 Therefore, this library must be used only with a GNU C compiler (or other compilers which support this use-case).
 
-Finally, this library creates dummy labels in order to return to the callsite. 
+This library creates dummy labels in order to return to the callsite. 
 To eliminate label reusage, labels are created based on the current line number.
 Therefore, you can only have one `GOSUB` call per line in your source file.
+
+Finally, the stack size is currently fixed at 256.
+Compile with `-DGOSUB_STACK_SIZE` to change.
