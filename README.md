@@ -50,3 +50,6 @@ Therefore, this library must be used only with a GNU C compiler (or other compil
 Finally, this library creates dummy labels in order to return to the callsite. 
 To eliminate label reusage, labels are created based on the current line number.
 Therefore, you can only have one `GOSUB` call per line in your source file.
+
+Finally, the stack size is currently fixed at 256.
+Compile with `-DGOSUB_STACK_SIZE` to change.
