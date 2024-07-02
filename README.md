@@ -5,7 +5,7 @@ This is a convenient way to incorporate a call stack in a language which lacks f
 I wrote it in C because someone asked if it was possible.
 
 You probably shouldn't actually use this library, if you can even call it that.
-Use void functions, please.
+Use functions, please.
 
 ## Compilation
 This library is a header-only library, meaning the only thing you need to do is include it into your program.
